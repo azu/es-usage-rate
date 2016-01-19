@@ -1,0 +1,43 @@
+{
+  "name": "es-usage-rate",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/azu/es-usage-rate.git"
+  },
+  "author": "azu",
+  "email": "azuciao@gmail.com",
+  "homepage": "https://github.com/azu/es-usage-rate",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/azu/es-usage-rate/issues"
+  },
+  "version": "1.0.0",
+  "description": "Usage rate analyzer for ECMAScript",
+  "main": "index.js",
+  "directories": {
+    "test": "test"
+  },
+  "scripts": {
+    "build": "babel src --out-dir lib --source-maps",
+    "watch": "babel src --out-dir lib --watch --source-maps",
+    "prepublish":"npm run --if-present build",
+    "test": "mocha"
+  },
+  "keywords": [
+    "ecmascript",
+    "es"
+  ],
+  "devDependencies": {
+    "babel-cli": "^6.4.0",
+    "babel-plugin-add-module-exports": "^0.1.3-alpha",
+    "babel-preset-es2015": "^6.3.13",
+    "espower-babel": "^4.0.1",
+    "mocha": "^2.3.4",
+    "power-assert": "^1.2.0"
+  },
+  "dependencies": {
+    "babylon": "^6.4.2",
+    "estree-walker": "^0.2.0",
+    "glob": "^6.0.4"
+  }
+}
