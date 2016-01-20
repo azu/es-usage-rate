@@ -1,10 +1,11 @@
 // LICENSE : MIT
 "use strict";
-import {walk} from 'estree-walker';
+import traverse from 'babel-traverse';
 export default function map(ast) {
     const results = [];
-    walk(ast, {
-        enter: function (node, parent) {
+    traverse(ast, {
+        enter(path) {
+            const node = path.node;
             if (node.type) {
                 if (typeof node.type === "string") {
                     results.push(node.type);
