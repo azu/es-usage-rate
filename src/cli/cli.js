@@ -6,6 +6,7 @@ export function executeContent(content, argv) {
     return usageOfContent(content, argv);
 }
 export function execute(argv) {
+
     const filePathList = globby.sync(argv._, {
         nodir: true
     });
