@@ -1,0 +1,11 @@
+$ es-usage-rate "src/**/*.js"
+
+[Options]
+
+    --formatter formatter name - default: "line-by-line",
+    --mapper: mapper name - default: "line-by-line",
+    --reducer: reducer name - default: "identity"
+
+[stdin]
+
+$ cat file.js | es-usage-rate
