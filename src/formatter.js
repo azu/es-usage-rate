@@ -1,6 +1,7 @@
 // LICENSE : MIT
 "use strict";
+import path from "path";
+import resolveModule from "./utils/resolve-module"
 export const createFormatter = (formatterName) => {
-    const format = require("./formatters/line-by-line");
-    return format;
+    return resolveModule(formatterName, path.join(__dirname, "formatters"));
 };

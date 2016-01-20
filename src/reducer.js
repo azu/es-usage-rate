@@ -1,6 +1,9 @@
 // LICENSE : MIT
 "use strict";
-export function createReducer(reducerName){
-    const reduce = require("./reducers/identity");
-    return reduce;
+
+import path from "path";
+import resolveModule from "./utils/resolve-module"
+export function createReducer(reducerName) {
+    return resolveModule(reducerName, path.join(__dirname, "reducers"));
+
 }

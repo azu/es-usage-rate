@@ -20,7 +20,7 @@
   "scripts": {
     "build": "babel src --out-dir lib --source-maps",
     "watch": "babel src --out-dir lib --watch --source-maps",
-    "prepublish":"npm run --if-present build",
+    "prepublish": "npm run --if-present build",
     "test": "mocha"
   },
   "keywords": [
@@ -38,6 +38,8 @@
   "dependencies": {
     "babylon": "^6.4.2",
     "estree-walker": "^0.2.0",
-    "glob": "^6.0.4"
+    "glob": "^6.0.4",
+    "interop-require": "^1.0.0",
+    "try-resolve": "^1.0.1"
   }
 }

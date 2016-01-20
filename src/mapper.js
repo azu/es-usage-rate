@@ -1,6 +1,7 @@
 // LICENSE : MIT
 "use strict";
+import path from "path";
+import resolveModule from "./utils/resolve-module"
 export const createMapper = (mapperName) => {
-    const map = require("./mappers/line-by-line");
-    return map;
+    return resolveModule(mapperName, path.join(__dirname, "mappers"));
 };

@@ -9,13 +9,18 @@ describe("usage", function () {
             const filePathList = glob.sync(__dirname + "/../src/**.js");
             var output = usageOfFiles(filePathList);
             assert(typeof output === "string");
-            console.log(output);
         });
     });
     describe("usageOfContent", function () {
         it("should return string", ()=> {
-            var usage = usageOfContent("var a = 1");
-            assert(Array.isArray(usage));
+            var output = usageOfContent("var a = 1");
+            assert(typeof output === "string");
+            assert.equal(output, `File
+Program
+VariableDeclaration
+VariableDeclarator
+NumericLiteral
+Identifier`)
         });
     });
 });
