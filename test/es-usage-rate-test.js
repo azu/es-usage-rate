@@ -15,12 +15,11 @@ describe("usage", function () {
         it("should return string", ()=> {
             var output = usageOfContent("var a = 1");
             assert(typeof output === "string");
-            assert.equal(output, `File
-Program
+            assert.equal(output, `Program
 VariableDeclaration
 VariableDeclarator
-NumericLiteral
-Identifier`)
+Identifier
+NumericLiteral`)
         });
     });
 });
