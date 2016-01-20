@@ -6,13 +6,20 @@ export function parse(code) {
         sourceType: "module",
 
         plugins: [
-            // enable experimental async functions
-            "asyncFunctions",
-            "classProperties",
-
-            // enable jsx and flow syntax
             "jsx",
-            "flow"
+            "flow",
+            "asyncFunctions",
+            "classConstructorCall",
+            "doExpressions",
+            "trailingFunctionCommas",
+            "objectRestSpread",
+            "decorators",
+            "classProperties",
+            "exportExtensions",
+            "exponentiationOperator",
+            "asyncGenerators",
+            "functionBind",
+            "functionSent"
         ]
     });
 }

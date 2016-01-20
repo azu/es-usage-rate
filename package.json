@@ -13,7 +13,15 @@
   },
   "version": "1.0.0",
   "description": "Usage rate analyzer for ECMAScript",
-  "main": "index.js",
+  "main": "lib/es-usage-rate.js",
+  "files": [
+    "bin",
+    "lib",
+    "src"
+  ],
+  "bin": {
+    "es-usage-rate": "bin/cmd.js"
+  },
   "directories": {
     "test": "test"
   },
