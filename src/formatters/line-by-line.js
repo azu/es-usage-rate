@@ -7,5 +7,5 @@ export default function format(results) {
         output += usage.join("\n");
         output += "\n"
     });
-    return output;
+    return output.trim();
 }

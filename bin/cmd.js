@@ -9,7 +9,10 @@ if (argv.h || argv.help) {
     return console.log(fs.readFileSync(__dirname + "/usage.txt", "utf-8"));
 }
 if (input) {
-    console.log(execute(argv))
+    var output = execute(argv);
+    if(output.length > 0) {
+        console.log(output)
+    }
 } else {
     process.stdin.pipe(concat(function (buf) {
         console.log(executeContent(buf.toString('utf8')));
