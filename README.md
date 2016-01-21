@@ -58,6 +58,22 @@ ExpressionStatement| 69  (2.91%) ▬▬▬▬
 
 ```
 
+Filter by ES6 node
+
+```sh
+$ es-usage-rate --reducer es6 "src/**/*.js" | distribution --char=ba
+                      Key|Ct  (Pct)    Histogram
+VariableDeclaration:const|156 (44.07%) ▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬
+          TemplateElement| 75 (21.19%) ▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬
+  VariableDeclaration:let| 32  (9.04%) ▬▬▬▬▬▬▬▬▬
+          TemplateLiteral| 32  (9.04%) ▬▬▬▬▬▬▬▬▬
+  ArrowFunctionExpression| 29  (8.19%) ▬▬▬▬▬▬▬▬
+        AssignmentPattern| 12  (3.39%) ▬▬▬▬
+            ObjectPattern|  6  (1.69%) ▬▬
+         ClassDeclaration|  6  (1.69%) ▬▬
+                ClassBody|  6  (1.69%) ▬▬
+```
+
 ## Tests
 
     npm test
