@@ -7,7 +7,9 @@ export default function map(ast) {
         enter(path) {
             const node = path.node;
             if (node.type) {
-                if (typeof node.type === "string") {
+                if (node.type === "VariableDeclaration") {
+                    results.push(`${node.type}:${node.kind}`);
+                } else {
                     results.push(node.type);
                 }
             }

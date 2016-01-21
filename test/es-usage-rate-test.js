@@ -16,7 +16,7 @@ describe("usage", function () {
             var output = usageOfContent("var a = 1");
             assert(typeof output === "string");
             assert.equal(output, `Program
-VariableDeclaration
+VariableDeclaration:var
 VariableDeclarator
 Identifier
 NumericLiteral`)
