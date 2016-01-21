@@ -21,5 +21,15 @@ VariableDeclarator
 Identifier
 NumericLiteral`)
         });
+        it("should return Generator", ()=> {
+            var output = usageOfContent("var a = function *(){}");
+            assert(typeof output === "string");
+            assert.equal(output, `Program
+VariableDeclaration:var
+VariableDeclarator
+Identifier
+GeneratorExpression
+BlockStatement`)
+        });
     });
 });

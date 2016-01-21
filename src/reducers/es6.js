@@ -3,8 +3,10 @@
 // ES6 https://github.com/estree/estree/blob/master/es6.md
 const ES6_TYPE = [
     "ForOfStatement",
-    "VariableDeclaration:let",
-    "VariableDeclaration:const",
+    "GeneratorExpression", // <= not ESTree
+    "GeneratorDeclaration", // <= not ESTree
+    "VariableDeclaration:let",// <=
+    "VariableDeclaration:const",// <=
     "ArrowFunctionExpression",
     "YieldExpression",
     "TemplateLiteral",
@@ -22,7 +24,15 @@ const ES6_TYPE = [
     "ModuleDeclaration",
     "ModuleSpecifier",
     "Imports",
-    "Exports"
+    "Exports",
+    "ImportDeclaration",
+    "ImportSpecifier",
+    "ImportDefaultSpecifier",
+    "ImportNamespaceSpecifier",
+    "ExportNamedDeclaration",
+    "ExportSpecifier",
+    "ExportDefaultDeclaration",
+    "ExportAllDeclaration"
 ];
 export default function filter(nodeList) {
     return nodeList.filter(nodeName => {
