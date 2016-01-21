@@ -31,5 +31,5 @@ export function usageOfFiles(filePathList, options = {}) {
         }
     });
     const format = createFormatter(mergedOptions.formatter);
-    return format(nodeList);
+    return format(nodeList, filePathList);
 }

@@ -50,6 +50,7 @@
     "glob": "^6.0.4",
     "globby": "^4.0.0",
     "interop-require": "^1.0.0",
+    "lodash": "^4.0.0",
     "minimist": "^1.2.0",
     "try-resolve": "^1.0.1"
   }
