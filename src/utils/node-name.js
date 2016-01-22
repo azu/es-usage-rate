@@ -7,7 +7,7 @@ export function nodeName(node) {
     if (node.type) {
         switch (node.type) {
             case "VariableDeclaration":
-                return `${node.type}:${node.kind}`;
+                return `${node.type}_${node.kind}`;
                 break;
             default:
                 return node.type;

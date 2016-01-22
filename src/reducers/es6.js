@@ -5,8 +5,8 @@ const ES6_TYPE = [
     "ForOfStatement",
     "GeneratorExpression", // <= not ESTree
     "GeneratorDeclaration", // <= not ESTree
-    "VariableDeclaration:let",// <=
-    "VariableDeclaration:const",// <=
+    "VariableDeclaration_let",// <=
+    "VariableDeclaration_const",// <=
     "ArrowFunctionExpression",
     "YieldExpression",
     "TemplateLiteral",
