@@ -11,7 +11,7 @@
   "bugs": {
     "url": "https://github.com/azu/es-usage-rate/issues"
   },
-  "version": "0.1.2",
+  "version": "0.2.0",
   "description": "Usage rate analyzer for ECMAScript",
   "main": "lib/es-usage-rate.js",
   "files": [
