@@ -16,7 +16,7 @@ describe("usage", function () {
             var output = usageOfContent("var a = 1");
             assert(typeof output === "string");
             assert.equal(output, `Program
-VariableDeclaration:var
+VariableDeclaration_var
 VariableDeclarator
 Identifier
 NumericLiteral`)
@@ -25,7 +25,7 @@ NumericLiteral`)
             var output = usageOfContent("var a = function *(){}");
             assert(typeof output === "string");
             assert.equal(output, `Program
-VariableDeclaration:var
+VariableDeclaration_var
 VariableDeclarator
 Identifier
 GeneratorExpression
