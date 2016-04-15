@@ -9,6 +9,9 @@
     "development": {
       "plugins": [
         "babel-plugin-espower"
+      ],
+      "presets": [
+        "power-assert"
       ]
     }
   }

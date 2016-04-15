@@ -40,6 +40,7 @@
     "babel-plugin-add-module-exports": "^0.1.3-alpha",
     "babel-plugin-espower": "^2.1.2",
     "babel-preset-es2015": "^6.3.13",
+    "babel-preset-power-assert": "^1.0.0",
     "babel-register": "^6.7.2",
     "mocha": "^2.3.4",
     "power-assert": "^1.2.0"
